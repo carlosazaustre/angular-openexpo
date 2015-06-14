@@ -1,0 +1,46 @@
+<div class="text-center">
+  <img ng-src="http://taller-angular.carlosazaustre.es/asset/{{ empleado.data.pic }}" width="200px" alt="{{ empleado.data.fullName }}">
+  <h1>
+    {{ empleado.data.fullName }}<br>
+    <small>{{ empleado.data.title }}</small>
+  </h1>
+</div>
+
+<div class="col-sm-8">
+  <ul class="nav nav-tabs">
+    <li><a class="active" href="#">Info</a></li>
+  </ul>
+
+  <div class="tab-content text-left">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <h4 class="list-group-item-heading text-primary">Teléfono</h4>
+        <p class="list-group-item-text">
+          <span class="fa fa-lg fa-phone"></span>
+          {{ empleado.data.cellPhone }}
+        </p>
+      </li>
+      <li class="list-group-item">
+        <h4 class="list-group-item-heading text-primary">Correo Electrónico</h4>
+        <p class="list-group-item-text">
+          <span class="fa fa-lg fa-envelope"></span>
+          {{ empleado.data.email }}
+        </p>
+      </li>
+      <li class="list-group-item">
+        <h4 class="list-group-item-heading text-primary">Twitter</h4>
+        <p class="list-group-item-text">
+          <span class="fa fa-lg fa-twitter"></span>
+          {{ empleado.data.twitterId }}
+        </p>
+      </li>
+      <li class="list-group-item">
+        <h4 class="list-group-item-heading text-primary">Página Web</h4>
+        <p class="list-group-item-text">
+          <span class="fa fa-lg fa-laptop"></span>
+          {{ empleado.data.blog }}
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>

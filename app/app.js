@@ -17,7 +17,7 @@
         controller  : 'ListadoController',
         controllerAs: 'listado'
       })
-      .when('/empleado/:empladoId', {
+      .when('/empleado/:empleadoId', {
         templateUrl : 'app/components/empleado/empleado.html',
         controller  : 'EmpleadoController',
         controllerAs: 'empleado'

@@ -6,8 +6,10 @@
   <title>Directorio de Empleados</title>
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-theme.css" type="text/css">
+  <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css" type="text/css">
 </head>
 <body ng-app="directorio">
+
   <!-- Navbar -->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -17,12 +19,14 @@
     </div>
   </nav>
 
-  <!-- Application views -->
+  <!-- Application Views -->
   <div class="container-fluid" ng-view></div>
 
+  <!-- Vendor Scripts -->
   <script src="./node_modules/angular/angular.js"></script>
   <script src="./node_modules/angular-route/angular-route.js"></script>
 
+  <!-- Application Scripts -->
   <script src="./app/app.js"></script>
   <script src="./app/components/empleado/empleado.controller.js"></script>
   <script src="./app/components/listado/listado.controller.js"></script>

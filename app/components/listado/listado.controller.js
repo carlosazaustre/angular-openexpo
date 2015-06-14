@@ -16,7 +16,6 @@
       .error(onError);
 
     function onRequestComplete (data) {
-      console.log(data);
       vm.empleados = data;
     }
 
