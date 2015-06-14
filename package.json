@@ -4,7 +4,7 @@
   "description": "Código fuente del Taller sobre AngularJS en OpenExpoDay 2015",
   "main": "index.js",
   "scripts": {
-    "start": "http-server app"
+    "start": "http-server ."
   },
   "repository": {
     "type": "git",
