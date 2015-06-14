@@ -17,24 +17,17 @@
   </div>
 </form>
 
+<hr>
+
 <div class="media-list">
 
-  <div class="media" ng-repeat="empleado in listado.empleados | filter: listado.search">
-    <div class="media-left">
-      <a ng-href="/empleado/{{ empleado.id }}">
-        <img ng-src="http://taller-angular.carlosazaustre.es/asset/{{ empleado.pic }}" width="80px" class="media-object">
-      </a>
-    </div>
-    <div class="media-body">
-      <a ng-href="/empleado/{{ empleado.id }}">
-        <h4 class="media-heading">{{ empleado.fullName }}</h4>
-        <p>
-          {{ empleado.title }}
-          <span class="label label-info">{{ empleado.department }}</span></p>
-        </p>
-      </a>
-    </div>
-    <hr>
+  <div ng-repeat="empleado in listado.empleados | filter: listado.search">
+    <empleado-item index="empleado.id"
+                   picture="empleado.pic"
+                   full-name="empleado.fullName"
+                   title="empleado.title"
+                   department="empleado.department">
+    </empleado-item>
   </div>
 
 </div>
