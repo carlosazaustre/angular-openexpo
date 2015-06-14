@@ -8,6 +8,8 @@
   ListadoController.$inject = ['$http'];
 
   function ListadoController ($http) {
+    var vm = this;
+
     $http
       .get('http://taller-angular.carlosazaustre.es/empleados')
       .success(onRequestComplete)
@@ -15,6 +17,7 @@
 
     function onRequestComplete (data) {
       console.log(data);
+      vm.empleados = data;
     }
 
     function onError(err) {

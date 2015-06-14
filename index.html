@@ -8,7 +8,17 @@
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-theme.css" type="text/css">
 </head>
 <body ng-app="directorio">
-  <div ng-view></div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Listado de Empleados</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Application views -->
+  <div class="container-fluid" ng-view></div>
 
   <script src="./node_modules/angular/angular.js"></script>
   <script src="./node_modules/angular-route/angular-route.js"></script>
