@@ -1,6 +1,12 @@
+<form>
+  <div class="form-group">
+    <input ng-model="listado.search.fullName "type="text" class="form-control">
+  </div>
+</form>
+
 <div class="media-list">
 
-  <div class="media" ng-repeat="empleado in listado.empleados">
+  <div class="media" ng-repeat="empleado in listado.empleados | filter: listado.search">
     <div class="media-left">
       <a ng-href="/empleado/{{ empleado.id }}">
         <img ng-src="http://taller-angular.carlosazaustre.es/asset/{{ empleado.pic }}" width="80px" class="media-object">
