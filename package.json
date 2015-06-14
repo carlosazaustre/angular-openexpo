@@ -1,0 +1,26 @@
+{
+  "name": "angular-openexpo",
+  "version": "1.0.0",
+  "description": "Código fuente del Taller sobre AngularJS en OpenExpoDay 2015",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlosazaustre/angular-openexpo"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "openexpo",
+    "openexpoday2015",
+    "javascript"
+  ],
+  "author": "Carlos Azaustre @carlosazaustre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosazaustre/angular-openexpo/issues"
+  },
+  "homepage": "https://github.com/carlosazaustre/angular-openexpo"
+}
