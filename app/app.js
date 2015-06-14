@@ -3,6 +3,7 @@
 
   angular
     .module('directorio', ['ngRoute'])
+    .value('API_URL', 'http://taller-angular.carlosazaustre.es')
     .config(directorioConfig);
 
   directorioConfig.$inject = ['$routeProvider', '$locationProvider'];

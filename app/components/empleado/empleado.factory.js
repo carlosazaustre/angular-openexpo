@@ -5,9 +5,9 @@
     .module('directorio')
     .factory('Empleado', Empleado);
 
-  Empleado.$inject = ['$http'];
+  Empleado.$inject = ['$http', 'API_URL'];
 
-  function Empleado ($http) {
+  function Empleado ($http, API_URL) {
 
     return {
       getAll: getAll,
@@ -15,11 +15,11 @@
     }
 
     function getAll () {
-      return $http.get('http://taller-angular.carlosazaustre.es/empleados/');
+      return $http.get(API_URL + '/empleados/');
     }
 
     function get (empleado) {
-      return $http.get('http://taller-angular.carlosazaustre.es/empleados/' + empleado);
+      return $http.get(API_URL + '/empleados/' + empleado);
     }
   }
 
