@@ -9,6 +9,20 @@
 
   function ListadoController (Empleado) {
     var vm = this;
+    vm.nombre = true;
+    vm.departamento = false
+
+    vm.cambiarBusqueda = function (termino) {
+      if (termino === 'nombre') {
+        vm.nombre = true;
+        vm.departamento = false;
+      }
+      if (termino === 'departamento') {
+        vm.nombre = false;
+        vm.departamento = true;
+      }
+      vm.search = '';
+    }
 
     Empleado
       .getAll()

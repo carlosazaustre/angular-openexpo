@@ -1,6 +1,19 @@
 <form>
   <div class="form-group">
-    <input ng-model="listado.search.fullName "type="text" class="form-control">
+    <input ng-show="listado.nombre" ng-model="listado.search.fullName "type="text" class="form-control" placeholder="Busca por nombre">
+    <input ng-show="listado.departamento" ng-model="listado.search.department "type="text" class="form-control" placeholder="Busca por departamento">
+    <div class="radio">
+      <label>
+        <input type="radio" name="options" ng-click="listado.cambiarBusqueda('nombre')" checked>
+        Buscar por nombre
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="options" ng-click="listado.cambiarBusqueda('departamento')">
+        Buscar por departamento
+      </label>
+    </div>
+
   </div>
 </form>
 
