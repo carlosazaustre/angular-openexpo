@@ -5,11 +5,13 @@
     .module('directorio')
     .controller('EmpleadoController', EmpleadoController);
 
-  function EmpleadoController ($http, $routeParams) {
+  EmpleadoController.$inject = ['$routeParams', 'Empleado'];
+
+  function EmpleadoController ($routeParams, Empleado) {
     var vm = this;
 
-    $http
-      .get('http://taller-angular.carlosazaustre.es/empleados/' + $routeParams.empleadoId)
+    Empleado
+      .get($routeParams.empleadoId)
       .success(onRequestComplete)
       .error(onError);
 

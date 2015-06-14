@@ -5,13 +5,13 @@
     .module('directorio')
     .controller('ListadoController', ListadoController);
 
-  ListadoController.$inject = ['$http'];
+  ListadoController.$inject = ['Empleado'];
 
-  function ListadoController ($http) {
+  function ListadoController (Empleado) {
     var vm = this;
 
-    $http
-      .get('http://taller-angular.carlosazaustre.es/empleados')
+    Empleado
+      .getAll()
       .success(onRequestComplete)
       .error(onError);
 
