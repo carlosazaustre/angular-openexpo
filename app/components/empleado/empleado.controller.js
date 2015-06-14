@@ -10,17 +10,21 @@
   function EmpleadoController ($routeParams, Empleado) {
     var vm = this;
 
-    Empleado
-      .get($routeParams.empleadoId)
-      .success(onRequestComplete)
-      .error(onError);
+    activate();
 
-    function onRequestComplete (data) {
-      vm.data = data;
-    }
+    function activate () {
+      Empleado
+        .get($routeParams.empleadoId)
+        .success(onRequestComplete)
+        .error(onError);
 
-    function onError (err) {
-      console.log(err);
+      function onRequestComplete (data) {
+        vm.data = data;
+      }
+
+      function onError (err) {
+        console.log(err);
+      }
     }
   }
 
