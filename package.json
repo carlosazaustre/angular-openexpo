@@ -4,7 +4,7 @@
   "description": "Código fuente del Taller sobre AngularJS en OpenExpoDay 2015",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server app"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/carlosazaustre/angular-openexpo/issues"
   },
-  "homepage": "https://github.com/carlosazaustre/angular-openexpo"
+  "homepage": "https://github.com/carlosazaustre/angular-openexpo",
+  "dependencies": {
+    "angular": "^1.3.16",
+    "angular-route": "^1.3.16",
+    "bootstrap": "^3.3.4"
+  },
+  "devDependencies": {
+    "http-server": "^0.8.0"
+  }
 }
